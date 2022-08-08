@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 100vw;
+    
+        }
+        .up{
+            background-color: rgb(84, 84, 137);
+    width: 100%;
+    display: flex;
+    color: white;
+    position: relative;
+   
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    
+        }
+        .active{
+            
+            border-bottom: 2px solid red;
+        }
+        .right{
+            display: flex;
+    float: right;
+    padding: 0px 238px;
+    overflow: auto;
+    font-size: 18px;
+    font-family: 'Akshar', sans-serif;
+    cursor: pointer;
+ 
+  transition: all 0.3s ease;
+        }
+        .left:hover{
+            color: red;
+            
+            
+        }
+        h4:hover{
+            color: red;
+        }
+       
+        .fa:hover{
+            color: red;
+        }
+        .left{
+            cursor: pointer;
+    padding: 0px 60px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-family: 'Akshar', sans-serif;
+        }
+         ul{
+            list-style-type: none;
+    display: flex;
+    float: left;
+    transition: 0.3s;
+    margin: 0px 284px;
+
+        }
+        .fab{
+            transition: all 0.3s ease;
+        }
+       
+        a{
+            font-weight: 400;
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 23px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    font-family: 'Akshar', sans-serif;
+        }
+        a:hover{
+           
+            border-bottom:2px solid red;
+            color: red;
+            
+        }
+        .menu{
+            
+            position: relative;
+    margin: 0px 0px;
+            width: 100vw;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    background-color: #294c7e;
+
+        }
+    
+    .wrapper{
+        
+        margin: 0 auto;
+        padding-bottom: 29px;
+        display: flex;
+       
+    }
+        img{
+            height: 17px;
+    width: 19px;
+        }
+        .hover-fx{
+            font-size: 0rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px;
+    width: 62px;
+    height: 6px;
+    padding: 1px 2px;
+    line-height: 0px;
+    border-radius: 60%;
+    /* text-align: center; */
+    /* position: relative; */
+    /* justify-content: center; */
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    transition: 274ms;
+        }
+        .fa{
+            color: white;
+            transition: all 0.3s ease;
+        }
+        h4{
+            transition: all 0.3s ease;
+        }
+        
+      .img1{
+        background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+      }
+      .img1:hover{
+        background-color: red;
+
+      }
+      .btn{
+        background-color: white;
+    color: red;
+    /* border: none; */
+    cursor: pointer;
+    border-color: 20px solid red;
+    border-radius: 10px;
+    border-color: red;
+    padding: 9px;
+    transition: all 0.3s ease;
+    margin-left: -146px;
+    width: 92px;
+    height: 58px;
+    font-size: 24px;
+      }
+      .btn:hover{
+        
+        background: transparent;
+        color: white;
+        background-color: red;
+        border-color:  black;
+      }
+      .down p{
+        position:absolute;
+        background-image: url(indian-5965915.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(8px);
+        
+      }
+      .img3{
+       
+       position: absolute;
+        background-repeat: no-repeat;
+    height: 109vh;
+    margin-left: 32px 2px;
+    width: 56vw;
+    margin: 0px -108px;
+    
+    
+      }
+      
+        
+      .container {
+        margin: 56px 724px;
+    padding: 16px 16px;
+    width: 24%;
+    font-family: 'Ubuntu', sans-serif;
+
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    }
+
+    .form-group input {
+        font-family: 'Akshar', sans-serif;
+    text-align: center;
+    display: block;
+    width: 179px;
+    margin: 6px 0px;
+    line-height: 31px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 4px;
+
+    border-radius: 10px;
+    font-size: 18px;
+
+    }
+
+    .container h1 {
+        font-size: 30px;
+    text-align: revert;
+    color: black;
+    font-weight: 900;
+    }
+
+    .container button {
+        display: block;
+    width: 40%;
+    background-color: red;
+    color: white;
+    font-size: 21px;
+    padding: 10px;
+    height: 10%;
+    margin: 31px 4px;
+    transition: all 0.3s ease;
+}
+    
+    .container button:hover{
+        background-color: white;
+        color: red;
+        border-color:2px solid red;
+    }
+    .container h3{
+        font-size: 31px;
+    text-align: inherit;
+    margin: 38px 0px;
+    color: black;
+    }
+    .bottom{
+        position: absolute;
+    background-color: rgb(0 193 255);
+    margin: 557px 0px;
+    width: 100vw;
+    height: 165px;
+    justify-content: center;
+    line-height: 51px;
+    align-items: center;
+    text-align: center;
+    }
+    .bottom h3{
+        font-size: 31px;
+        font-family: 'Uchen', serif;
+
+
+    }
+    .bottom h5{
+        font-size: 23px;
+        font-family: 'Open Sans', sans-serif;    }
+    .bottom a{
+        background-color: #3b5998 ;
+
+    padding: 6px 7px;
+    border-radius: 8px;
+    }
+    .bottom a:hover{
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+    }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="up">
+            <div class="left">
+            <p><i class="fa fa-phone" aria-hidden="true"></i>Toll-free:xxx-xxx-xxxx</p>
+        </div>
+        <div class="right">
+            <h4>
+                <i class="fa fa-user" aria-hidden="true">login</i>
+            </h4>
+            <h4>|</h4>
+            <h4>Register</h4>
+         
+        </div>
+        <div class="wrapper">
+            <a href="" class="hover-fx"><i class="fab fa-instagram"><img class="img1" src="instagram.png" alt=""></i></a>
+            <a href="" class="hover-fx"><i class="fab fa-facebook"></i><img class="img1" src="facebook.png" alt=""></a>
+            <a href="" class="hover-fx"><i class="fab fa-twitter"></i><img class="img1" src="twitter.png" alt=""></a>
+    
+        </div>
+        </div>
+    
+        <div class="menu">
+            <ul>
+                
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+         <button class="btn">Donate</button>
+        </div>
+    </nav>
+        <div class="main">
+        <div class="down">
+           <p> </p>
+           <img  class="img3" src="nm3.png" alt="">
+           <div class="container">
+            <h1>GET INVOLVED WITH US</h1>
+            <h3>Be the part of Campaign</h3>
+            
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email">
+                </div>
+                <button class="btn">JOIN US</button>
+            </form>
+        </div>
+  
+        </div>
+    <div class="bottom">
+        <h3>FOLOW THE CAMPAIGN</h3>
+        <h5>Bthe part of Independence day Campaign</h5>
+        
+        <a href="https//youtube.com" id="youtube"><i class="fa fa-youtube">youtube</i></a>
+        <a href="https//twitter.com" id="twitter" ><i class="fa fa-twitter">twitter</i></a>
+        <a href="https//facebook.com" id="facebook"><i class="fa fa-facebook">acebook</i></a>
+    </div>
+
+</div>
+</body>
+</html>
